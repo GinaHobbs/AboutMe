@@ -1,0 +1,52 @@
+#content {
+  background-color: cadetblue;
+}
+
+body {
+  background-color: azure;
+  color: azure;
+  border:lightblue 15px double;
+  /* margin:0px;
+  padding: 0px; */
+  display:block;
+}
+
+h1 {
+  text-align: left;
+  background-color:cadetblue;
+  border-bottom: darkslategray 2px solid;
+  
+  padding: 5px;
+}
+
+nav {
+  text-align: right; 
+  background-color: cadetblue;
+  padding: 10px;
+  font-size: larger;
+  /* border-bottom: darkslategray 5px solid; */
+}
+
+nav li {
+  /* background-color: darkslategray; */
+  padding: 25px;
+  text-align: center; 
+  display: inline;
+  /*float: right;
+  display: block; */
+}
+/* Change the color of links on hover */
+/* W3 School */
+nav li:hover {
+  background-color:azure;
+  color: darkslategray;
+  padding: 25px;
+  text-decoration: underline;
+}
+
+p {
+  background-color: cadetblue;
+  font-size: larger;
+  padding: 5px;
+  /* border-bottom: darkslategray 5px solid; */
+  }
