@@ -1,11 +1,14 @@
 'use strict';
 
+let totalCorrect = 0;
+
 // let userName = prompt('What is you name?');
 // alert('Hello ' + userName + '! Welcome to my site.');
 
 // let howOld = prompt('Am I 33?');
 // let howOldLower = howOld.toLowerCase();
 // if ((howOldLower === 'y') || (howOldLower === 'yes')) {  alert('You are correct!');
+// totalCorrect++;
 // // console.log('You are correct!')
 // } else if ((howOldLower === 'n') || (howOldLower === 'no')) {
 //   alert('Wrong! I am 33 years old.');
@@ -18,6 +21,7 @@
 // if ((whereFromLower === 'y') || (whereFromLower === 'yes')) {  alert('Wrong! I am from Oklahoma.');
 // } else if ((whereFromLower === 'n') || (whereFromLower === 'no')) {
 //   alert('You are correct!.');
+//   totalCorrect++;
 //   // console.log('You are correct!')
 // } else {
 //   alert('I do not understand your input');
@@ -28,6 +32,7 @@
 // if ((whatHobbyLower === 'y') || (whatHobbyLower === 'yes')) {  alert('Wrong! My hobby is playing guitar.');
 // } else if ((whatHobbyLower === 'n') || (whatHobbyLower === 'no')) {
 //   alert('You are correct! My hobby is playing guitar.');
+//   totalCorrect++;
 //   // console.log('You are correct!')
 // } else {
 //   alert('I do not understand your input');
@@ -36,6 +41,7 @@
 // let whatSchool = prompt('Am I attending Code Fellows?');
 // let whatSchoolLower = whatSchool.toLowerCase();
 // if ((whatSchoolLower === 'y') || (whatSchoolLower === 'yes')) {  alert('You are correct!');
+// totalCorrect++;
 // // console.log('You are correct!')
 // } else if ((whatSchoolLower === 'n') || (whatSchoolLower === 'no')) {
 //   alert('Wrong!');
@@ -48,12 +54,14 @@
 // if ((whatDegreeLower === 'y') || (whatDegreeLower === 'yes')) {  alert('Wrong! My degree is in Chinese Mandarin.');
 // } else if ((whatDegreeLower === 'n') || (whatDegreeLower === 'no')) {
 //   alert('You are correct!');
+//   totalCorrect++;
 //   // console.log('You are correct!')
 // } else {
 //   alert('I do not understand your input');
 // }
 
-// let correctAnswer = 4;
+// let correctAnswer = Math.floor((Math.random() * 10));
+// console.log(correctAnswer);
 // let gameWon = false;
 // let guessCount = 1;
 
@@ -77,6 +85,7 @@
 //       else if (userGuess == correctAnswer) {
 //         alert('You are correct!');
 //         gameWon = true;
+//         totalCorrect++;
 //         break;
 //       }
 //     }
@@ -87,23 +96,26 @@
 //   guessCount++;
 // }
 
-let castlevaniaArray = ['alucard', 'trevor', 'sypha', 'grant'];
-let castlevaniaGameWon = false;
-let castlevaniaGuessCount = 0;
+// let castlevaniaArray = ['alucard', 'trevor', 'sypha', 'grant'];
+// let castlevaniaGameWon = false;
+// let castlevaniaGuessCount = 0;
 
-while ((castlevaniaGameWon != true) && (castlevaniaGuessCount < 6)) {
-  let castlevaniaAnswer = prompt('Who is a party member in Castlevania 2?');
-  let castlevaniaAnswerLower = castlevaniaAnswer.toLowerCase();
+// while ((castlevaniaGameWon != true) && (castlevaniaGuessCount < 6)) {
+//   let castlevaniaAnswer = prompt('Who is a party member in Castlevania 2?');
+//   let castlevaniaAnswerLower = castlevaniaAnswer.toLowerCase();
 
-  for (let i = 0; i < castlevaniaArray.length; i++) {
-    if (castlevaniaAnswerLower == castlevaniaArray[i].toString()) {
-      alert('You are correct!');
-      castlevaniaGameWon = true;
-    }
-  }
-  if (castlevaniaGameWon === true) {
-    break;
-  }
-  alert('Guess again.');
-  castlevaniaGuessCount++;
-}
+//   for (let i = 0; i < castlevaniaArray.length; i++) {
+//     if (castlevaniaAnswerLower == castlevaniaArray[i]) {
+//       alert('You are correct!');
+//       castlevaniaGameWon = true;
+//     }
+//   }
+//   if (castlevaniaGameWon === true) {
+//     totalCorrect++;
+//     break;
+//   }
+//   alert('Guess again.');
+//   castlevaniaGuessCount++;
+// }
+
+// alert('You guessed ' + totalCorrect + ' out of 7 questions correctly.');
