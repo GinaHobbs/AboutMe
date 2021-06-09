@@ -15,8 +15,16 @@ h1 {
   text-align: left;
   background-color:cadetblue;
   border-bottom: darkslategray 2px solid;
-  
   padding: 5px;
+}
+
+h2 {
+  text-align: left;
+  background-color:cadetblue;
+  margin-left: 10px;
+  /* border-bottom: darkslategray 2px solid; */
+  /* padding: 5px; */
+  /* text-decoration: underline azure; */
 }
 
 nav {
@@ -27,14 +35,16 @@ nav {
   /* border-bottom: darkslategray 5px solid; */
 }
 
-nav li {
+.nav li{
   /* background-color: darkslategray; */
   padding: 25px;
   text-align: center; 
   display: inline;
-  /*float: right;
-  display: block; */
+  text-decoration: underline azure;
+  font-size: larger;
+  margin-left: 0px;
 }
+
 /* Change the color of links on hover */
 /* W3 School */
 nav li:hover {
@@ -48,5 +58,19 @@ p {
   background-color: cadetblue;
   font-size: larger;
   padding: 5px;
+  margin-left: 25px;
   /* border-bottom: darkslategray 5px solid; */
+  }
+
+  ul li {
+    font-size: larger;
+    margin-left: 25px;
+  }
+
+  ol {
+    padding-bottom: 5px;
+  }
+  ol li{
+    font-size: larger;
+    margin-left: 25px;
   }
