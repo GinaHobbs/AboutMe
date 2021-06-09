@@ -53,29 +53,57 @@
 //   alert('I do not understand your input');
 // }
 
-let userGuess = prompt('Guess a number in the range of 1 and 10');
-let answer = 4;
-let gameWon = false;
-let guessCount = 0;
+// let correctAnswer = 4;
+// let gameWon = false;
+// let guessCount = 1;
 
-while (gameWon === false && guessCount < 4) {
-  if (userGuess < 1 || userGuess > 10) {
-    alert('Please input a value in the range of 1 and 10');
-  }
-  else {
-    for (i = 0; i < guessCount; i++){
-      if (userGuess < answer){
-        alert('Your guess is too low.');
-      }
-      else if (userGuess > answer) {
-        alert('Your guess is too high');
-      }
-      else if (userGuess == answer) {
-        alert('You are correct!');
-        gameWon = true;
-        break;
-      }
+// while ((gameWon != true) && (guessCount <= 4)) {
+//   let userGuess = prompt('Guess a number in the range of 1 and 10');
+//   if ((userGuess < 1) || (userGuess > 10)) {
+//     alert('Please input a value in the range of 1 and 10');
+//   }
+//   else {
+//     // console.log('here is the answer in the else branch: ' + userGuess);
+//     for (let i = 0; i < guessCount; i++) {
+//       // console.log('here is the answer in the for loop:' + userGuess);
+//       if (userGuess < correctAnswer){
+//         alert('Your guess is too low.');
+//         break;
+//       }
+//       else if (userGuess > correctAnswer) {
+//         alert('Your guess is too high');
+//         break;
+//       }
+//       else if (userGuess == correctAnswer) {
+//         alert('You are correct!');
+//         gameWon = true;
+//         break;
+//       }
+//     }
+//   }
+//   if (gameWon === true) {
+//     break;
+//   }
+//   guessCount++;
+// }
+
+let castlevaniaArray = ['alucard', 'trevor', 'sypha', 'grant'];
+let castlevaniaGameWon = false;
+let castlevaniaGuessCount = 0;
+
+while ((castlevaniaGameWon != true) && (castlevaniaGuessCount < 6)) {
+  let castlevaniaAnswer = prompt('Who is a party member in Castlevania 2?');
+  let castlevaniaAnswerLower = castlevaniaAnswer.toLowerCase();
+
+  for (let i = 0; i < castlevaniaArray.length; i++) {
+    if (castlevaniaAnswerLower == castlevaniaArray[i].toString()) {
+      alert('You are correct!');
+      castlevaniaGameWon = true;
     }
   }
-  guessCount++;
+  if (castlevaniaGameWon === true) {
+    break;
+  }
+  alert('Guess again.');
+  castlevaniaGuessCount++;
 }
