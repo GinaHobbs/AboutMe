@@ -1,78 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* Begin CSS */
+
+
 #body-wrap {
   background-color: rgba(255, 255, 255, 0.7);
-  /* background-color: rgba(3, 18, 24, 0.7); */
 }
 
 body {
+  font-family: 'Viaoda Libre', cursive;
   width: 75%;
   margin-left: 12.5%;
   background-image: url("background-blue.jpg");
   background-size: 300px 100%;
-  /* background-color: azure; */
-  /* color: azure; */
   color: rgba(3, 18, 24);
-
-  /* border:lightblue 15px double; */
-  /* margin:0px;
-  padding: 0px; */
   display:block;
+  border: solid 2px;
 }
 
 h1 {
   text-align: left;
-  /* background-color:cadetblue; */
-  border-bottom: darkslategray 2px solid;
   padding: 5px;
+  margin-left: 5%;
+  text-decoration: underline rgba(3, 18, 24);
 }
 
 h2 {
   text-align: left;
-  /* background-color:cadetblue; */
-  margin-left: 10px;
-  /* border-bottom: darkslategray 2px solid; */
-  /* padding: 5px; */
-  /* text-decoration: underline azure; */
+  margin-left: 5%;
+  text-decoration: underline rgba(3, 18, 24);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(3, 18, 24);
 }
 
 nav {
   text-align: right; 
-  /* background-color: cadetblue; */
-  /* background-color: rgba(95, 158, 160, 0.8); */
   padding: 10px;
   font-size: larger;
-  /* border-bottom: darkslategray 5px solid; */
 }
 
-.nav li{
-  /* background-color: darkslategray; */
+.nav-top li{
   padding: 25px;
   text-align: center; 
   display: inline;
-  /* text-decoration: underline azure; */
+  font-size: larger;
+  margin-left: 0px;
+  border-bottom: rgba(3, 18, 24) solid 3px;
+}
+
+.nav-bottom {
+  /* background-color: rgba(3, 18, 24, 0.9); */
+  padding: 25px;
+  /* border: rgba(15, 63, 82) solid 2px; */
+}
+
+footer {
+  background-color: rgba(3, 18, 24, 0.9);
+  /* background-color: rgba(15, 63, 82, 0.7); */
+  border-top: solid 3px rgba(3, 18, 24);
+}
+
+.nav-bottom a {
+  color: azure;
+}
+.nav-bottom li{
+  color: rgba(3, 18, 24);
+  padding: 25px;
+  text-align: center; 
+  display: inline;
   font-size: larger;
   margin-left: 0px;
 }
 
 /* Change the color of links on hover */
 /* W3 School */
-nav li:hover {
-  background-color:azure;
-  color: darkslategray;
+.nav-top li:hover{
+  background-color: rgba(15, 63, 82, 0.7);
   padding: 25px;
-  text-decoration: underline;
+}
+
+.nav-top li:hover > a{
+  color: azure;
+}
+
+.nav-bottom li:hover {
+  /* background-color:azure; */
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(3, 18, 24);
+  padding: 25px;
+  /* text-decoration: underline; */
+}
+
+.nav-bottom li:hover{
+  background-color: rgba(15, 63, 82, 0.7);
+  padding: 25px;
+}
+
+.nav-bottom li:hover > a{
+  color: azure;
+}
+
+.column-left {
+  float: left;
+  width: 30%;
+  height: 900px;
+  color: azure;
+  background-color: rgba(15, 63, 82, 0.7);
+  /* border: rgba(15, 63, 82) solid 2px; */
+}
+
+.column-right {
+  float: right;
+  width: 70%;
+  height: 900px;
+  /* border: rgba(15, 63, 82) solid 2px; */
+}
+
+/* Clear floats after the columns */
+/* Source W3 schools*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 p {
   /* background-color: cadetblue; */
   font-size: larger;
   padding: 5px;
-  margin-left: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* color: rgb(10, 58, 77) */
   /* border-bottom: darkslategray 5px solid; */
   }
 
   ul li {
     font-size: larger;
-    margin-left: 25px;
+    margin-left: 15%;
   }
 
   ol {
@@ -80,5 +194,5 @@ p {
   }
   ol li{
     font-size: larger;
-    margin-left: 25px;
+    margin-left: 15%;
   }
