@@ -1,11 +1,18 @@
-#content {
-  background-color: cadetblue;
+#body-wrap {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(3, 18, 24, 0.7); */
 }
 
 body {
-  background-color: azure;
-  color: azure;
-  border:lightblue 15px double;
+  width: 75%;
+  margin-left: 12.5%;
+  background-image: url("background-blue.jpg");
+  background-size: 300px 100%;
+  /* background-color: azure; */
+  /* color: azure; */
+  color: rgba(3, 18, 24);
+
+  /* border:lightblue 15px double; */
   /* margin:0px;
   padding: 0px; */
   display:block;
@@ -13,14 +20,14 @@ body {
 
 h1 {
   text-align: left;
-  background-color:cadetblue;
+  /* background-color:cadetblue; */
   border-bottom: darkslategray 2px solid;
   padding: 5px;
 }
 
 h2 {
   text-align: left;
-  background-color:cadetblue;
+  /* background-color:cadetblue; */
   margin-left: 10px;
   /* border-bottom: darkslategray 2px solid; */
   /* padding: 5px; */
@@ -29,7 +36,8 @@ h2 {
 
 nav {
   text-align: right; 
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  /* background-color: rgba(95, 158, 160, 0.8); */
   padding: 10px;
   font-size: larger;
   /* border-bottom: darkslategray 5px solid; */
@@ -40,7 +48,7 @@ nav {
   padding: 25px;
   text-align: center; 
   display: inline;
-  text-decoration: underline azure;
+  /* text-decoration: underline azure; */
   font-size: larger;
   margin-left: 0px;
 }
@@ -55,7 +63,7 @@ nav li:hover {
 }
 
 p {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   font-size: larger;
   padding: 5px;
   margin-left: 25px;
