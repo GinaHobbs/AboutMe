@@ -1,54 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-} */
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
 
 /* Begin CSS */
-
 
 #body-wrap {
   background-color: rgba(255, 255, 255, 0.7);
@@ -58,7 +10,7 @@ body {
   font-family: 'Viaoda Libre', cursive;
   width: 75%;
   margin-left: 12.5%;
-  background-image: url("background-blue.jpg");
+  background-image: url("../img/background-blue.jpg");
   background-size: 300px 100%;
   color: rgba(3, 18, 24);
   display:block;
@@ -66,15 +18,20 @@ body {
 }
 
 h1 {
+  font-size: xx-large;
   text-align: left;
-  padding: 5px;
+  padding: 25px;
   margin-left: 5%;
+  margin-top: 25px;
   text-decoration: underline rgba(3, 18, 24);
 }
 
 h2 {
+  font-size: x-large;
   text-align: left;
+  /* padding: 25px; */
   margin-left: 5%;
+  margin-top: 25px;
   text-decoration: underline rgba(3, 18, 24);
 }
 
@@ -85,8 +42,11 @@ a {
 
 nav {
   text-align: right; 
-  padding: 10px;
   font-size: larger;
+}
+
+.nav-top {
+  padding-top: 25px;
 }
 
 .nav-top li{
@@ -135,15 +95,10 @@ footer {
 
 .nav-bottom li:hover {
   /* background-color:azure; */
-  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(255, 255, 255, 0.7); */
   color: rgba(3, 18, 24);
   padding: 25px;
-  /* text-decoration: underline; */
-}
-
-.nav-bottom li:hover{
-  background-color: rgba(15, 63, 82, 0.7);
-  padding: 25px;
+  text-decoration: underline;
 }
 
 .nav-bottom li:hover > a{
@@ -166,6 +121,10 @@ footer {
   /* border: rgba(15, 63, 82) solid 2px; */
 }
 
+.column-right p, ol {
+  color: rgb(15, 63, 82);
+}
+
 /* Clear floats after the columns */
 /* Source W3 schools*/
 .row:after {
@@ -178,21 +137,33 @@ p {
   /* background-color: cadetblue; */
   font-size: larger;
   padding: 5px;
+  padding-bottom: 25px;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 5%;
   /* color: rgb(10, 58, 77) */
   /* border-bottom: darkslategray 5px solid; */
+  }
+
+  ul {
+    padding-bottom: 5px;
+    list-style: inherit;  
   }
 
   ul li {
     font-size: larger;
     margin-left: 15%;
+    padding: 5px;
   }
 
   ol {
     padding-bottom: 5px;
+    list-style: decimal;  
+    margin-left: 15px;
   }
+
   ol li{
     font-size: larger;
     margin-left: 15%;
+    padding: 5px;
   }
